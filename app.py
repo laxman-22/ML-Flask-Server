@@ -29,7 +29,7 @@ def predict():
         })
         response = make_response(res)
         response.set_cookie('your_cookie_name', 'cookie_value', samesite='None', secure=True)
-        response.headers.add("Access-Control-Allow-Origin", "https://ml-deployment-65gi.vercel.app/")
+        response.headers.add("Access-Control-Allow-Origin", "https://ml-deployment-65gi.vercel.app")
  
         return response
 
